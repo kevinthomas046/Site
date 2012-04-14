@@ -5,6 +5,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Dosis:200,400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Crushed' rel='stylesheet' type='text/css'>
 	
 	<!-- Basic Page Needs -->
 	<meta charset="utf-8">
@@ -15,9 +16,93 @@
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	
 	<!-- JS -->
 	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="js/boostrap.min.js"></script>
+
 </head>
+<body>
+	<div class="container-fluid bg-grid" id="vt-container">
+		<div class="row-fluid">
+			<div class="sidebar">
+				<div class="vt-logo">
+					<h3>Vacation Tracker</h3>
+					<span>by arvato systems</span>
+				</div>
+				<div class="vt-main-navigation">
+					<div>
+					<input id="ac-1" name="accordion-1" type="radio" checked>
+					<label for="ac-1">My Account</label>
+					<article class="ac-medium">
+						<ul class="my-account">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Vacation Request</a></li>
+							<li><a href="#">Carryover Request</a></li>
+							<li><a href="#">Sick Request</a></li>
+						</ul>
+					</article>
+				</div>
+				<div>
+					<input id="ac-2" name="accordion-1" type="radio">
+					<label for="ac-2">Supervise</label>
+					<article class="ac-small">
+						<ul>
+							<li><a href="#">Vacation Responses</a></li>
+							<li><a href="#">Carryover Responses</a></li>
+						</ul>
+					</article>
+				</div>
+				<div>
+					<input id="ac-3" name="accordion-1" type="radio">
+					<label for="ac-3">Admin</label>
+					<article class="ac-large">
+						<ul>
+							<li><a href="#">Employees</a></li>
+							<li><a href="#">Departments</a></li>
+							<li><a href="#">Locations</a></li>
+							<li><a href="#">Holidays</a></li>
+							<li><a href="#">Liability Reports</a></li>							
+						</ul>
+					</article>
+				</div>
+			</div>
+		</div>
+		<div class="vt-content">
+			<div class="vt-top">
+				<ul class="vt-top-allowances">
+					<li class="vacation-days-allowances">
+						<a href="#">
+							Vacation Days
+						</a>
+					</li>
+					<li class="personal-days-allowances">
+						<a href="#">
+							Personal Days
+						</a>
+					</li>
+					<li class="carryover-days-allowances">
+						<a href="#">
+							Carryover Days
+						</a>
+					</li>
+					<li class="fmla-days-allowances">
+						<a href="#">
+							FMLA Days
+						</a>
+					</li>
+					<li class="sick-days-allowances">
+						<a href="#">
+							Sick Days
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="vt-main-content">
+			</div>
+		</div>
+	</div>
+</body>
 </html>
