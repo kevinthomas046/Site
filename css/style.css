@@ -1,5 +1,7 @@
 #vt-container {
 	background-color: rgba(252, 252, 252, 1);
+	padding-left: 0px;
+	padding-right: 0px;
 }
 .bg-grid {
 	background-image: url('../img/grid.png');
@@ -18,13 +20,12 @@
 	background-color: #131313;
 }
 .sidebar .vt-logo {
-	padding: 10px 20px 20px;
+	padding: 20px 30px 20px;
 }
 .sidebar .vt-logo h3 {
 	color: #F8F8F8;
 	font-family: 'Berkshire Swash', cursive;
 	margin-bottom: 0px;
-	padding: 10px 10px 0px;
 }
 .sidebar .vt-logo span {
 	padding: 0px 0px 20px 120px;
@@ -138,7 +139,7 @@
 	cursor: pointer;
 	background: #F3F3F3;
 	opacity: 0.7;
-	-webkit-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.4s ease-in-out;
 }
 .vt-main-navigation ul li:hover {
 	opacity: 1.0;
@@ -146,4 +147,74 @@
 .vt-main-navigation ul li a {
 	text-decoration: none;
 	width: 100%;
+}
+.vt-content {
+	margin-left: 290px;
+}
+.vt-top {
+	position: relative;
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+	color: #333;
+	z-index: 101;
+	box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.2);
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%,rgba(246, 246, 246, 1) 47%,rgba(237, 237, 237, 1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255, 255, 255, 1)), color-stop(47%,rgba(246, 246, 246, 1)), color-stop(100%,rgba(237, 237, 237, 1)));
+}
+ul.vt-top-allowances {
+	list-style: none;
+	width: 80%;
+}
+.vt-top-allowances li {
+	float: left;
+	width: 20%;
+	position: relative;
+	margin-bottom: 0px;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: background-color 0.4s ease;
+	-ms-transition: background-color 0.4s ease;
+}
+.vt-top-allowances li a {
+	border-top: 0;
+	display: block;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+	color: black;
+	padding: 30px 10px 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	overflow: hidden;
+}
+.vt-top-allowances span {
+	display: block;
+	text-align: center;
+	font-size: 10px;
+}
+.allowance-effect {
+	font-size: 70px;
+	line-height: 0px;
+	color: white;
+	top: 50%;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+/* .vt-top-allowances li.vacation-days-allowances, */
+.vt-top-allowances li.vacation-days-allowances:hover {
+	background: #ef7901 url('../img/mail.png') no-repeat no-repeat center -10px;
+}
+.vt-top-allowances li.personal-days-allowances:hover {
+	background: #98bf0d;
+}
+.vt-top-allowances li.carryover-days-allowances:hover {
+	background: #01b0ec;
+}
+.vt-top-allowances li.fmla-days-allowances:hover {
+	background: #b147a3;
+}
+.vt-top-allowances li.sick-days-allowances:hover {
+	background: #d54421;
 }
