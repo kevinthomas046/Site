@@ -3,10 +3,6 @@
 	padding-left: 0px;
 	padding-right: 0px;
 }
-.bg-grid {
-	background-image: url('../img/grid.png');
-	background-repeat: repeat-x;
-}
 .sidebar {
 	position: fixed;
 	top: 0;
@@ -14,8 +10,7 @@
 	bottom: 0;
 	width: 290px;
 	background-color: rgba(0, 0, 0, 0.1);
-	overflow-y: scroll;
-	overflow-x: hidden;
+	overflow: auto;
 	color: white;
 	background-color: #131313;
 }
@@ -140,6 +135,7 @@
 	background: #F3F3F3;
 	opacity: 0.7;
 	-webkit-transition: opacity 0.4s ease-in-out;
+	-moz-transition: opacity 0.4s ease-in-out;
 }
 .vt-main-navigation ul li:hover {
 	opacity: 1.0;
@@ -161,6 +157,8 @@
 	box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.2);
 	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%,rgba(246, 246, 246, 1) 47%,rgba(237, 237, 237, 1) 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255, 255, 255, 1)), color-stop(47%,rgba(246, 246, 246, 1)), color-stop(100%,rgba(237, 237, 237, 1)));
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%,rgba(246, 246, 246, 1) 47%,rgba(237, 237, 237, 1) 100%);
+	background: -moz-gradient(linear, left top, left bottom, color-stop(0%,rgba(255, 255, 255, 1)), color-stop(47%,rgba(246, 246, 246, 1)), color-stop(100%,rgba(237, 237, 237, 1)));
 }
 ul.vt-top-allowances {
 	list-style: none;
@@ -172,8 +170,8 @@ ul.vt-top-allowances {
 	position: relative;
 	margin-bottom: 0px;
 	-webkit-transition: all 0.4s ease;
-	-moz-transition: background-color 0.4s ease;
-	-ms-transition: background-color 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
 }
 .vt-top-allowances li a {
 	border-top: 0;
@@ -201,10 +199,13 @@ ul.vt-top-allowances {
 	position: absolute;
 	width: 100%;
 	text-align: center;
+	opacity: 0.5;
+	-webkit-transition: font-size 0.4s ease;
+	-moz-transition: font-size 0.4s ease;
 }
 /* .vt-top-allowances li.vacation-days-allowances, */
 .vt-top-allowances li.vacation-days-allowances:hover {
-	background: #ef7901 url('../img/mail.png') no-repeat no-repeat center -10px;
+	background: #ef7901;
 }
 .vt-top-allowances li.personal-days-allowances:hover {
 	background: #98bf0d;
@@ -217,4 +218,10 @@ ul.vt-top-allowances {
 }
 .vt-top-allowances li.sick-days-allowances:hover {
 	background: #d54421;
+}
+.vt-top-allowances li:hover .vt-allowance-big{
+	font-size: 0px;
+}
+.vt-top-allowances li:hover .allowance-effect {
+	opacity: 1;
 }
