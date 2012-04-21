@@ -163,6 +163,7 @@
 ul.vt-top-allowances {
 	list-style: none;
 	width: 80%;
+	margin: 0px;
 }
 .vt-top-allowances li {
 	float: left;
@@ -180,7 +181,7 @@ ul.vt-top-allowances {
 	position: relative;
 	z-index: 2;
 	color: black;
-	padding: 30px 10px 10px;
+	padding: 35px 10px;
 	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
@@ -224,4 +225,37 @@ ul.vt-top-allowances {
 }
 .vt-top-allowances li:hover .allowance-effect {
 	opacity: 1;
+}
+.vt-top-nav-end {
+	width: 20%;
+	display: inline-block;
+}
+ul.vt-top-request {
+	list-style: none;
+	margin-bottom: 60px;
+}
+ul.vt-top-request li {
+	float: left;
+	width: 20%;
+	position: relative;
+	margin-bottom: 0px;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+}
+ul.vt-top-request li:hover .iconic{
+	color: blue;
+}
+ul.vt-top-request li a {
+	border-top: 0;
+	display: block;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+	color: black;
+	padding: 15px 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	overflow: hidden;
 }

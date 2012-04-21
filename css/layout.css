@@ -104,3 +104,26 @@
 	img.scale-with-grid {
 		max-width: 100%;
 		height: auto; }
+		
+/* #Fonts
+================================================== */
+	@font-face { 
+		font-family: 'IconicStroke'; 
+		src: url('../fonts/iconic_stroke.eot'); 
+		src: local('IconicStroke'), 
+			url('../fonts/iconic_stroke.svg#iconic') format('svg'), 
+			url('iconic_stroke.otf') format('opentype'); 
+	}
+	.iconic {
+		font-family: 'IconicStroke';
+		font-size: 26px;
+	}
+	.vacation:before {
+		content: '\e070';
+	}
+	.carryover:before {
+		content: '\2935';
+	}
+	.sick:before {
+		content: '\e078';
+	}
