@@ -151,7 +151,6 @@
 	position: relative;
 	top: 0;
 	width: 100%;
-	overflow: hidden;
 	color: #333;
 	z-index: 101;
 	box-shadow: 2px 4px 7px 2px rgba(0, 0, 0, 0.2);
@@ -159,6 +158,7 @@
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255, 255, 255, 1)), color-stop(47%,rgba(246, 246, 246, 1)), color-stop(100%,rgba(237, 237, 237, 1)));
 	background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%,rgba(246, 246, 246, 1) 47%,rgba(237, 237, 237, 1) 100%);
 	background: -moz-gradient(linear, left top, left bottom, color-stop(0%,rgba(255, 255, 255, 1)), color-stop(47%,rgba(246, 246, 246, 1)), color-stop(100%,rgba(237, 237, 237, 1)));
+	height: 106px;
 }
 ul.vt-top-allowances {
 	list-style: none;
@@ -236,7 +236,7 @@ ul.vt-top-request {
 }
 ul.vt-top-request li {
 	float: left;
-	width: 20%;
+	width: 33.33%;
 	position: relative;
 	margin-bottom: 0px;
 	-webkit-transition: all 0.4s ease;
@@ -258,4 +258,74 @@ ul.vt-top-request li a {
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 	overflow: hidden;
+}
+.vt-user-actions-menu {
+	display: none;
+}
+span.vt-user {
+	font-size: 20px;
+}
+div.vt-top-nav-end-user {
+	text-align: center;
+}
+div.vt-top-nav-end-user:hover > ul {
+ 	display: block;
+}
+div.vt-top-nav-end-user:hover {
+	background: #999;
+}
+
+ul.vt-user-actions-menu li:hover > ul {
+	display: block;
+}
+div.vt-top-nav-end-user > a {
+ 	color: #a67b45;
+}
+
+.vt-top-nav-end-user ul {
+ 	display: block;
+	 margin: 0;
+	 position: relative;
+	 top: 23px;
+	 right: 0px;
+	width: 100%;
+	 border: none !important;
+	 padding: 2px;
+	 background: #999;
+	 z-index: 1000;
+	 zoom: 1;
+	 -webkit-box-shadow: none;
+	    -moz-box-shadow: none;
+	         box-shadow: none;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+}
+
+.vt-top-nav-end-user ul:before, .vt-top-nav-end-user ul:after {
+ 	display: table;
+	 content: "";
+	 zoom: 1;
+}
+
+.vt-top-nav-end-user ul:after {
+ 	clear: both;
+}
+
+.vt-top-nav-end-user ul a {
+ 	float: none;
+	text-decoration: none;
+}
+
+.vt-top-nav-end-user ul li {
+	 display: block;
+	 border-top: 1px solid #cfcfcf;
+	 border-left: none !important;
+	margin-bottom: 0px;
+	padding: 10px 25px;
+}
+
+.vt-top-nav-end-user ul li ul {
+ 	display: block;
+	 left: 130px !important;
+	 top: -3px;
 }
