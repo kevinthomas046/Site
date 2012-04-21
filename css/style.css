@@ -244,7 +244,7 @@ ul.vt-top-request li {
 	-ms-transition: all 0.4s ease;
 }
 ul.vt-top-request li:hover .iconic{
-	color: blue;
+	color: #3D7489;
 }
 ul.vt-top-request li a {
 	border-top: 0;
@@ -281,9 +281,14 @@ ul.vt-user-actions-menu li:hover > ul {
 div.vt-top-nav-end-user > a {
  	color: #a67b45;
 }
-
+ul.vt-user-actions-menu li {
+	-webkit-transition: all 0.4s ease;
+}
+ul.vt-user-actions-menu li:hover {
+	background: #fff;
+}
 .vt-top-nav-end-user ul {
- 	display: block;
+ 	display: none;
 	 margin: 0;
 	 position: relative;
 	 top: 23px;
@@ -325,7 +330,12 @@ div.vt-top-nav-end-user > a {
 }
 
 .vt-top-nav-end-user ul li ul {
- 	display: block;
-	 left: 130px !important;
-	 top: -3px;
+ 	display: none;
+	right: 100%;
+	position: absolute;
+	top: 39px;
+	-webkit-border-radius: 0px;
+}
+.vt-top-nav-end-user ul li ul li:first {
+	border: none;
 }
