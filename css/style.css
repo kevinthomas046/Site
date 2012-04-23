@@ -1,3 +1,6 @@
+body {
+	background: url('../img/stripey.png');
+}
 #vt-container {
 	background-color: rgba(252, 252, 252, 1);
 	padding-left: 0px;
@@ -201,8 +204,6 @@ ul.vt-top-allowances {
 	width: 100%;
 	text-align: center;
 	opacity: 0.5;
-	-webkit-transition: font-size 0.4s ease;
-	-moz-transition: font-size 0.4s ease;
 }
 /* .vt-top-allowances li.vacation-days-allowances, */
 .vt-top-allowances li.vacation-days-allowances:hover {
@@ -262,7 +263,7 @@ ul.vt-top-request li a {
 .vt-user-actions-menu {
 	display: none;
 }
-span.vt-user {
+div.vt-user {
 	font-size: 20px;
 }
 div.vt-top-nav-end-user {
@@ -331,11 +332,16 @@ ul.vt-user-actions-menu li:hover {
 
 .vt-top-nav-end-user ul li ul {
  	display: none;
-	right: 100%;
+	right: 99%;
 	position: absolute;
 	top: 39px;
 	-webkit-border-radius: 0px;
 }
 .vt-top-nav-end-user ul li ul li:first {
 	border: none;
+}
+@media only screen and (max-width : 1280px),
+only screen and (max-device-width : 1280px) {
+	body {
+		zoom: 0.8;
 }

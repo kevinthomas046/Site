@@ -127,3 +127,6 @@
 	.sick:before {
 		content: '\e078';
 	}
+	.arrow-down:before {
+		content: '\e018';
+	}

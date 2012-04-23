@@ -21,6 +21,15 @@
 	<!-- JS -->	
 	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-tooltip.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('a.iconic[title]').tooltip({
+				animation: true,
+				placement: 'bottom'
+			});
+		});
+	</script>
 </head>
 <body>
 	<div class="container-fluid" id="vt-container">
@@ -119,12 +128,14 @@
 					</ul>
 					<div class="vt-top-nav-end">
 						<ul class="vt-top-request">
-							<li><a href="#" class="iconic vacation"></a></li>
-							<li><a href="#" class="iconic carryover"></a></li>
-							<li><a href="#" class="iconic sick"></a></li>	
+							<li><a href="#" class="iconic vacation" title="Request Vacation Day"></a></li>
+							<li><a href="#" class="iconic carryover" title="Request Carryover Day"></a></li>
+							<li><a href="#" class="iconic sick" title="Book Sick Day"></a></li>	
 						</ul>
 						<div class="vt-top-nav-end-user">
-							<span class="vt-user">Hi, Kevin</span>
+							<div class="vt-user">
+								Hi, Kevin
+							</div>
 							<ul class="vt-user-actions-menu">
 								<li><a href="#">My Profile</a></li>
 								<li><a href="#">Direct Reports</a>
